@@ -125,13 +125,9 @@ section.focal {
   /* default */
   margin: 0 auto;
 }
-section.content1 {
+section.content1, section.content2 {
   padding: 2rem 0;
 }
-section.content2 {
-  padding: 2rem 0;
-}
-
 .row {
   display: flex;
   flex-direction: column;
@@ -142,9 +138,6 @@ section.content2 {
   flex-basis: 100%;
 }
 
-footer {
-  padding: 2rem 0;
-}
 footer .row {
   flex-wrap: nowrap;
   flex-direction: row;
@@ -220,15 +213,15 @@ header h1 i.fa-lg span {
   padding: 0.2rem 2rem 2rem;
 }
 
-.content1 h3 {
+.content1 h3, section.content2 h3, footer h3 {
   font-size: 1.999rem;
   padding: 0.2rem 2rem 2rem;
 }
-.content1 h3 i {
+.content1 h3 i, section.content2 h3 i, footer h3 i {
   vertical-align: middle;
   padding-right: 2rem;
 }
-.content1 p {
+.content1 p, section.content2 p, footer p {
   font-size: 1.414rem;
   padding: 0.5rem 2rem 2rem;
 }
@@ -272,22 +265,22 @@ header h1 i.fa-lg span {
   background-size: 1.5rem auto;
   background-position: left center;
 }
-.content2 h4 span[lang='"sv"']:after {
+.content2 h4 span[lang=sv]:after {
   background-image: url(../img/sv-icon.png);
 }
-.content2 h4 span[lang='"pt"']:after {
+.content2 h4 span[lang=pt]:after {
   background-image: url(../img/pt-icon.png);
 }
-.content2 h4 span[lang='"fr"']:after {
+.content2 h4 span[lang=fr]:after {
   background-image: url(../img/fr-icon.png);
 }
-.content2 h4 span[lang='"no"']:after {
+.content2 h4 span[lang=no]:after {
   background-image: url(../img/no-icon.png);
 }
-.content2 h4 span[lang='"hi"']:after {
+.content2 h4 span[lang=hi]:after {
   background-image: url(../img/hi-icon.png);
 }
-.content2 h4 span[lang='"es"']:after {
+.content2 h4 span[lang=es]:after {
   background-image: url(../img/es-icon.png);
 }
 
@@ -504,7 +497,7 @@ footer .row {
     align-items: flex-start;
   }
 
-  .content1 .row .col {
+  .content1 .row .col, section.content2 .row .col, footer .row .col {
     flex-basis: 33%;
     flex-grow: 1;
     flex-shrink: 0;
@@ -536,12 +529,12 @@ footer .row {
     margin: 0 auto;
   }
 
-  section.content1 h3 {
+  section.content1 h3, section.content2 h3 {
     font-size: 2.827rem;
     font-weight: 100;
   }
 
-  section.content1 h3 .fa-2x {
+  section.content1 h3 .fa-2x, section.content2 h3 .fa-2x {
     font-size: 2.827rem;
     padding-right: 1rem;
     vertical-align: middle;
@@ -641,7 +634,7 @@ footer .row {
     align-items: flex-start;
   }
 
-  .content1 .row .col {
+  .content1 .row .col, section.content2 .row .col, footer .row .col {
     flex-basis: 30%;
     flex-grow: 1;
     flex-shrink: 0;
@@ -672,11 +665,11 @@ footer .row {
     width: 600px;
     margin: 0 auto;
   }
-  section.content1 h3 {
+  section.content1 h3, section.content2 h3 {
     font-size: 2.827rem;
     font-weight: 100;
   }
-  section.content1 h3 .fa-2x {
+  section.content1 h3 .fa-2x, section.content2 h3 .fa-2x {
     font-size: 2.827rem;
     padding-right: 1rem;
     vertical-align: middle;

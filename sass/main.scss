@@ -95,7 +95,7 @@ section{
         @include padding(2rem 0);
     }
     &.content2{
-        @include padding(2rem 0);
+        @extend .content1;
     }
 }
 .row{
@@ -126,7 +126,7 @@ footer{
              border-left: 0;
         }
 }
-    @include padding(2rem 0);
+    @extend .content1;
 }
 /***********************************************
                 NAVIGATION
@@ -244,22 +244,22 @@ header{
     background-size: 1.5rem auto;
     background-position: left center;
     }
-    h4 span[lang="\"#{sv}\""]:after{
+    h4 span[lang="sv"]:after{
     background-image: url(../img/sv-icon.png);
     }
-    h4 span[lang="\"#{pt}\""]:after{
+    h4 span[lang="pt"]:after{
     background-image: url(../img/pt-icon.png);
     }
-    h4 span[lang="\"#{fr}\""]:after{
+    h4 span[lang="fr"]:after{
     background-image: url(../img/fr-icon.png);
     }
-    h4 span[lang="\"#{no}\""]:after{
+    h4 span[lang="no"]:after{
     background-image: url(../img/no-icon.png);
     }
-    h4 span[lang="\"#{hi}\""]:after{
+    h4 span[lang="hi"]:after{
     background-image: url(../img/hi-icon.png);
     }
-    h4 span[lang="\"#{es}\""]:after{
+    h4 span[lang="es"]:after{
     background-image: url(../img/es-icon.png);
     }
 }
@@ -355,10 +355,7 @@ footer{
     }
     .content{
         .row{
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
+            @include row(center);
             .col{
                 flex-basis: 50%;
             }
