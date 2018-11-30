@@ -1,0 +1,38 @@
+@mixin border-box {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+@mixin colors($bg-color, $colors){
+    background-color: $bg-color;
+    color: $colors;
+}
+@mixin bg{
+        content:"";
+        position:absolute;
+        bottom:-1rem;
+        height:1rem;
+        width:30%;
+        background-color: $darkBlue;
+}
+@mixin padding($values...) {    
+    @each $var in $values {
+        padding: #{$var};
+    }
+}
+@mixin media($maxwidth, $minwidth) {
+  @media all and (min-width:$minwidth) and (max-width:$maxwidth) {
+    @content;
+  }
+}
+@mixin third_media($minwidth) {
+  @media all and (min-width:$minwidth){
+    @content;
+  }
+}
+
+@mixin row($justify){
+    flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: $justify;
+        align-items: flex-start;
+}
